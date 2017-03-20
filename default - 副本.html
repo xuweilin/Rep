@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tocify by Greg Franko</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.tocify.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h2>Step1. 申请开发者账号</h2>
+            内容
+          </div>
+		  <div class="hero-unit">
+            <h2>Step2. 申请加入白名单</h2>
+            内容
+          </div>
+          <div class="hero-unit">
+            <h2>Step3. 进入配置平台</h2>
+            内容
+          </div>
+		  <div class="hero-unit">
+            <h2>Step4. 添加一款设备</h2>
+            内容
+          </div>
+          <div class="hero-unit">
+            <h2>Step5. 填写设备信息</h2>
+            内容
+			<br />
+              <h3>Step5.1 填写基本信息</h3>
+              <br />
+              内容
+              <h3>Step5.2 填写扩展信息</h3>
+              <br />
+              内容
+          </div>
+		  <div class="hero-unit">
+            <h2>Step6. 上传签名公钥</h2>
+            内容
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="js/jquery.tocify.js"></script>
+    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5",
+              scrollHistory: true
+            }).data("toc-tocify");
+
+
+        });
+    </script>
+
+  </body>
+</html>
